@@ -1,23 +1,33 @@
 /* eslint-disable react/prop-types */
-import { HouseIcon } from "lucide-react";
+import { Briefcase, FolderGit2, HouseIcon, UserPen, Wrench } from "lucide-react";
+import { NavLink } from "react-router-dom";
 const NavigationProvider = ({ children }) => {
   return (
-    <div className="w-screen h-screen overflow-x-hidden flex justify-center bg-gray-900">
+    <div className="w-screen h-screen overflow-x-hidden flex justify-center bg-[#0F1011]">
       <div className="lg:w-[90%] w-[100%] m-auto h-full  pt-2">
-        <nav className="w-80 m-auto bg-gray-700 rounded-2xl h-10 ">
-          <ul className="flex space-x-8">
-            <li>
-              <div
-                className="tooltip tooltip-open tooltip-bottom"
-                data-tip="hello"
-              >
-                <button className="btn">Bottom</button>
-              </div>
+        <nav className="w-80 m-auto flex justify-center items-center bg-gray-800 rounded-2xl h-10 ">
+          <ul className="flex h-full  items-center justify-center space-x-8">
+            <NavLink to="/" className="tooltip tooltip-bottom" data-tip="Home">
+              <HouseIcon className="text-white" />
+            </NavLink>
+
+            <NavLink to="/about" className="tooltip tooltip-bottom" data-tip="About">
+              <UserPen className="text-white" />
+            </NavLink>
+
+
+            <NavLink to="/projects" className="tooltip tooltip-bottom" data-tip="Projects">
+              <FolderGit2 className="text-white" />
+            </NavLink>
+
+            <li className="tooltip tooltip-bottom" data-tip="Skills">
+              <Wrench  className="text-white" />
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+
+            <li className="tooltip tooltip-bottom" data-tip="Experience">
+              <Briefcase className="text-white" />
+            </li>
+
           </ul>
         </nav>
         <div className="lg:flex lg:flex-row-reverse flex-col w-full aside space-y-12">
@@ -27,14 +37,14 @@ const NavigationProvider = ({ children }) => {
           </div>
 
           {/* side profile  */}
-          <div className="lg:w-96 w-[85%] lg:h-auto lg:min-h-[600px]  p-4 border m-auto bg-white rounded-2xl lg:sticky top-8 mt-8 flex flex-col justify-center items-center">
+          <div className="lg:w-96 w-[85%] lg:h-[600px] h-[500px]  p-4  m-auto bg-[#2E2F30] shadow-md rounded-2xl lg:sticky top-8 mt-8 flex flex-col justify-center items-center">
             <div className="m-auto w-[90%]  ">
               <img
-                className="w-72 h-72 m-auto border rounded-2xl"
+                className="w-72 h-72 m-auto  rounded-2xl"
                 src=""
                 alt=""
               />
-              <h1 className="text-4xl  text-center  font-extrabold text-black mt-3.5">
+              <h1 className="text-4xl  text-center  font-extrabold text-white mt-3.5">
                 Sandeep N kundekar
               </h1>
 

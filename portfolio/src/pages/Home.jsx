@@ -1,6 +1,6 @@
-import NavigationProvider from "../layouts/NavigationProvider";
 import githubIcon from "../assets/git.png";
 import linkedInIcon from "../assets/linkedin-logo.png";
+import NavigationProvider from "../layouts/NavigationProvider";
 const Home = () => {
   return (
     <NavigationProvider>
@@ -13,7 +13,7 @@ const Home = () => {
             DEVELOPER
           </h1>
 
-          <p className="mt-6 md:text-2xl text-lg text-gray-500">
+          <p className="mt-6 md:text-xl text-lg text-gray-500">
             Hi, I&apos;m Sandeep Kundekar, a MERN Stack Developer passionate
             about creating scalable web applications. I specialize in React.js,
             Node.js, MongoDB, and Playwright testing.
