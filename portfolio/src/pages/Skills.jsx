@@ -13,9 +13,9 @@ const Skills = () => {
   return (
     <NavigationProvider>
       <div className="about md:w-full w-[95%] m-auto py-2.5">
-        <div>
+        <div className="w-[90%] m-auto">
           <h1 className="md:text-8xl text-5xl font-bold text-white">TOOLS &</h1>
-          <h1 className="md:text-8xl text-5xl font-bold text-gray-700">
+          <h1 className="md:text-8xl text-4xl font-bold text-gray-700">
             TECHNOLOGIES
           </h1>
 

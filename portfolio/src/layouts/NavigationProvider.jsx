@@ -52,13 +52,13 @@ const NavigationProvider = ({ children }) => {
             {children}
 
             {/* contact from */}
-            <div className="mt-40">
+            <div className="m-auto mt-40 md:w-full w-[80%]">
               <h1 className="md:text-6xl text-5xl font-bold text-white">
                 CONTACT
               </h1>
 
-              <div className="form mt-8">
-                <div className="grid grid-cols-2 w-[700px] space-x-4 ">
+              <div className="form  mt-8 ">
+                <div className="grid md:grid-cols-2  grid-cols-1 md:w-[700px]  w-[100%]  md:space-x-4 md:space-y-0 space-y-3 ">
                   {/* name */}
                   <input
                     type="text"
@@ -72,7 +72,7 @@ const NavigationProvider = ({ children }) => {
                     placeholder="Enter your Email"
                   />
                 </div>
-                <div className="grid grid-cols-2 w-[700px]  mt-8">
+                <div className="grid grid-cols-2 md:w-[700px] w-[100%]  mt-8">
                   {/* text area */}
                   <textarea
                     name=""
