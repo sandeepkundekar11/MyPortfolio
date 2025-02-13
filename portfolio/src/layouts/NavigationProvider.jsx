@@ -41,9 +41,9 @@ const NavigationProvider = ({ children }) => {
               <Wrench className="text-white" />
             </NavLink>
 
-            <li className="tooltip tooltip-bottom" data-tip="Experience">
+            <NavLink to="/experience" className="tooltip tooltip-bottom" data-tip="Experience">
               <Briefcase className="text-white" />
-            </li>
+            </NavLink>
           </ul>
         </nav>
         <div className="lg:flex lg:flex-row-reverse flex-col w-full aside space-y-12">
