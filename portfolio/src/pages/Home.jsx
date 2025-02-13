@@ -13,7 +13,7 @@ const Home = () => {
             DEVELOPER
           </h1>
 
-          <p className="mt-6 md:text-xl text-lg text-gray-500">
+          <p className="mt-6 md:text-xl text-lg text-gray-200">
             Hi, I&apos;m Sandeep Kundekar, a MERN Stack Developer passionate
             about creating scalable web applications. I specialize in React.js,
             Node.js, MongoDB, and Playwright testing.
@@ -46,7 +46,7 @@ const Home = () => {
           </div>
 
           {/* buttons */}
-          <div className="flex space-x-7 mt-10">
+          <div className="md:flex space-x-7  md:space-y-0 space-y-4 mt-10 ">
             <button className="w-auto h-10 rounded-lg px-2 text-white font-medium shadow-md bg-blue-500 hover:bg-blue-600">
               View Projects
             </button>
