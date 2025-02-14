@@ -24,6 +24,7 @@ const Projects = () => {
                 skills={project.skills}
                 imgSrc={project.imgScr}
                 gitLink={project.gitLink}
+                videoLink={project.videoLink}
               />
             );
           })}

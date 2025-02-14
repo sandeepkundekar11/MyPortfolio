@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import githubIcon from "../assets/git.png";
 import linkedInIcon from "../assets/linkedin-logo.png";
 import NavigationProvider from "../layouts/NavigationProvider";
 const Home = () => {
+  const Navigate = useNavigate();
   return (
     <NavigationProvider>
       <div className="home md:w-full w-[95%] m-auto py-2.5">
@@ -33,7 +35,10 @@ const Home = () => {
                 <p className="text-gray-500 font-semibold">GitHub</p>
               </li>
               <li className="cursor-pointer">
-                <a href="">
+                <a
+                  href="https://www.linkedin.com/in/sandeep-kundekar-044a711b2/"
+                  target="_"
+                >
                   <img
                     className="md:w-14 md:h-14 -mt-2 w-12 h-12"
                     src={linkedInIcon}
@@ -47,12 +52,21 @@ const Home = () => {
 
           {/* buttons */}
           <div className="md:flex space-x-7  md:space-y-0 space-y-4 mt-10 ">
-            <button className="w-auto h-10 rounded-lg px-2 text-white font-medium shadow-md bg-blue-500 hover:bg-blue-600">
+            <button
+              className="w-auto h-10 rounded-lg px-2 text-white font-medium shadow-md bg-blue-500 hover:bg-blue-600"
+              onClick={() => Navigate("/projects")}
+            >
               View Projects
             </button>
-            <button className="w-auto h-10 px-2 text-white font-medium rounded-lg shadow-md bg-blue-500 hover:bg-blue-600">
-              Download Resume
-            </button>
+            <a
+              href="../../public/Sandeep_Kundekar_Resume.pdf"
+              target="_"
+              download="Sandeep_Resume.pdf"
+            >
+              <button className="w-auto h-10 px-2 text-white font-medium rounded-lg shadow-md bg-blue-500 hover:bg-blue-600">
+                Download Resume
+              </button>
+            </a>
           </div>
         </div>
       </div>

@@ -38,7 +38,9 @@ const ProjectInfo = [
       "Bcrypt",
     ],
     imgScr: EcomImg,
-    gitLink:"https://github.com/sandeepkundekar11/E-commerce"
+    gitLink: "https://github.com/sandeepkundekar11/E-commerce",
+    videoLink:
+      "https://www.linkedin.com/feed/update/urn:li:activity:7181997958589022208/",
   },
   {
     title: "Blogging Application",
@@ -56,7 +58,9 @@ const ProjectInfo = [
       "Bcrypt",
     ],
     imgScr: blogImg,
-    gitLink:"https://github.com/sandeepkundekar11/webBlog"
+    gitLink: "https://github.com/sandeepkundekar11/webBlog",
+    videoLink:
+      "https://www.linkedin.com/feed/update/urn:li:activity:7228445036818915328/",
   },
   {
     title: "Quiz App",
@@ -65,7 +69,9 @@ const ProjectInfo = [
       "An interactive quiz platform with secure authentication, quiz creation, preview, and restrictions on reattempts.",
     skills: ["React.js", "Node.js", "MongoDB", "Tailwind CSS", "JWT"],
     imgScr: QuizImg,
-    gitLink:"https://github.com/sandeepkundekar11/MernQuize"
+    gitLink: "https://github.com/sandeepkundekar11/MernQuize",
+    videoLink:
+      "https://www.linkedin.com/feed/update/urn:li:activity:7263852511994753024/",
   },
   {
     title: "Task Manager App",
@@ -74,7 +80,9 @@ const ProjectInfo = [
       "A Jira-like task manager with company, project, and user management, featuring task and sprint creation, drag-and-drop functionality, and performance optimizations.",
     skills: ["React.js", "Node.js", "Express.js", "MongoDB", "Bcrypt", "JWT"],
     imgScr: JiraImg,
-    gitLink:"https://github.com/sandeepkundekar11/TaskFlow"
+    gitLink: "https://github.com/sandeepkundekar11/TaskFlow",
+    videoLink:
+      "https://www.linkedin.com/feed/update/urn:li:activity:7293893728379801600/",
   },
 ];
 
@@ -170,7 +178,10 @@ const ProgramingLanguages = [
 
 export {
   BackendSkills,
-  DatabasesSkills, FrontendSkills, ProgramingLanguages, ProjectInfo, TestingTool,
-  Tools
+  DatabasesSkills,
+  FrontendSkills,
+  ProgramingLanguages,
+  ProjectInfo,
+  TestingTool,
+  Tools,
 };
-

@@ -1,7 +1,14 @@
 /* eslint-disable react/prop-types */
 import { FileVideo, Github } from "lucide-react";
 
-const ProjectCard = ({ imgSrc, ProjectName, ProjectInfo, skills = [],gitLink }) => {
+const ProjectCard = ({
+  imgSrc,
+  ProjectName,
+  ProjectInfo,
+  skills = [],
+  gitLink,
+  videoLink,
+}) => {
   return (
     <div className="w-full min-h-96 xl:flex  bg-gray-800 rounded-2xl shadow-md hover:scale-105 m-auto transition-all duration-300">
       <div className="ProjectImg xl:w-[50%] w-full min-h-80  h-full rounded-2xl ">
@@ -33,19 +40,21 @@ const ProjectCard = ({ imgSrc, ProjectName, ProjectInfo, skills = [],gitLink }) 
         {/* buttons */}
         <div className="w-full flex space-x-12 mt-12">
           <button className="relative overflow-hidden w-auto px-8 flex justify-center space-x-2 py-2 rounded-md text-white bg-blue-600 transition-all duration-500 before:absolute before:inset-0 before:w-0 before:bg-blue-700 before:transition-all before:duration-500 before:left-0 before:top-0 hover:before:w-full before:z-0">
-            <span className="relative z-10">Watch</span>
-            <span className="relative z-10">
-              <FileVideo />
-            </span>
+            <a href={videoLink} target="_" className="flex space-x-3">
+              <span className="relative z-10">Watch</span>
+              <span className="relative z-10">
+                <FileVideo />
+              </span>
+            </a>
           </button>
 
           <button className="relative overflow-hidden flex justify-center space-x-2 w-auto px-8 py-2 rounded-md text-white bg-blue-600 transition-all duration-500 before:absolute before:inset-0 before:w-0 before:bg-blue-700 before:transition-all before:duration-500 before:left-0 before:top-0 hover:before:w-full before:z-0">
-           <a href={gitLink} target="_" className="flex space-x-3">
-           <span className="relative z-10">View</span>
-            <span className="relative z-10">
-              <Github />
-            </span>
-           </a>
+            <a href={gitLink} target="_" className="flex space-x-3">
+              <span className="relative z-10">View</span>
+              <span className="relative z-10">
+                <Github />
+              </span>
+            </a>
           </button>
         </div>
       </div>
